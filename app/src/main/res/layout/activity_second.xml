@@ -13,12 +13,13 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textn"
         android:textSize="16sp"
         android:padding="5dp"
-        android:gravity="start"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
         android:textColor="@color/black">
     </TextView>
 
@@ -54,27 +55,31 @@
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_below="@+id/relativelayout3"
+        android:weightSum="2"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="21dp"
         android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/btnnqueen"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/backbtn"
             android:layout_marginRight="10dp"
-            android:background="@color/black"
             android:text="Show N Queens">
         </Button>
 
         <Button
             android:id="@+id/btnnterminate"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:background="@drawable/backbtn"
             android:layout_marginLeft="10dp"
-            android:background="@color/black"
             android:text="Exit">
         </Button>
 

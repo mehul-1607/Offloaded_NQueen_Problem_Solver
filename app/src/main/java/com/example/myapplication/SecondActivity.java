@@ -54,7 +54,7 @@ public class SecondActivity extends AppCompatActivity {
         Intent x = getIntent();
         String n = x.getExtras().getString("n");
 
-        nview.setText("Rows = "+n +"\nColumns = "+n);
+        nview.setText("Rows = "+n +" and Columns = "+n);
 
         int column = Integer.parseInt(n);
         int row = Integer.parseInt(n);
@@ -129,7 +129,7 @@ public class SecondActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Toast.makeText(SecondActivity.this, "The possible arrangement for "+ n+" queens will be shown by green colored boxes.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SecondActivity.this, "Request queued...", Toast.LENGTH_SHORT).show();
                 if (column!=0 && row!=0){
                     Handler handler = new Handler();
                     handler.postDelayed(new Runnable() {
